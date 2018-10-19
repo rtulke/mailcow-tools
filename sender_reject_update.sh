@@ -1,5 +1,19 @@
 !/bin/bash
 
+MPATH="/root/dev/mailcow-dockerized"        ## change your mailcow-dockerized install path
+MCONF="mailcow.conf"
+
+MYPATH=$(pwd)
+
+## test mailcow.conf exists
+if [ ! -f "${MPATH}/${MCONF}" ] ; then
+    echo "file or directory not found, please verify the MPATH= and MCONF= variable";
+    exit 1
+fi
+
+cd $MPATH
+source $MCONF
+
 sender_reject="./data/conf/postfix/sender_reject"
 sr=${sender_reject##*/}
 
@@ -33,4 +47,6 @@ if [ "$status" == "1" ]; then
     docker logs mailcowdockerized_postfix-mailcow_1 --tail 30 -f
   fi
 fi
+
+cd $MYPATH
 exit 0
