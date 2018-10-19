@@ -1,7 +1,7 @@
 # mailcow-tools
 a couple of bunch helper scripts to manage mailcow-dockerized
 
-## clear_after_upgrade.sh
+## cleanup_after_upgrade.sh
 
 It's a smaller script to cleanup further garbage collected after using the orignal update.sh by mailcow.
 
