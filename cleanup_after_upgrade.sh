@@ -1,4 +1,6 @@
-cho
+#!/bin/bash
+
+echo
 docker ps -a -f status=running
 echo
 echo
