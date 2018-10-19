@@ -9,9 +9,10 @@ git clone https://github.com/rtulke/mailcow-tools.git
 
 first look into each script and adjust the installation path if necessary 
 
+~~~
 MPATH="/your/mailcow/installation/"
 MCONF="mailcow.conf"
-
+~~~
 
 ## cleanup_after_upgrade.sh
 
