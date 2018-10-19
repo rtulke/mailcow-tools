@@ -1,6 +1,18 @@
 # mailcow-tools
 a couple of bunch helper scripts to manage mailcow-dockerized
 
+~~~
+mkdir -p /root/dev/mailcow-tools/
+cd /root/dev/mailcow-tools/
+git clone https://github.com/rtulke/mailcow-tools.git
+~~~
+
+first look into each script and adjust the installation path if necessary 
+
+MPATH="/your/mailcow/installation/"
+MCONF="mailcow.conf"
+
+
 ## cleanup_after_upgrade.sh
 
 It's a smaller script to cleanup further garbage collected after using the orignal update.sh by mailcow.
