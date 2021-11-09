@@ -26,9 +26,9 @@ With dbconnect you can connect directly to the mysql database from the mysql con
 
 Shows an overview of all running Docker instances and you can see how many are not started.
 
-## logdock.sh [filter|all|--help]
+## getmclogs.sh [filter|all|--help]
 
-Simplifies the log output of individual or all containers.
+Simplifies the log output of a specific container.
 
 ## sender_login_maps_update.sh
 
