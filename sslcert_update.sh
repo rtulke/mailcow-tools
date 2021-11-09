@@ -2,7 +2,7 @@
 
 MCDOMAIN="mx.foobar.com"
 LETSPATH="/etc/letsencrypt/live/"
-MPATH="/root/dev/mailcow-dockerized"        ## change here your mailcow-dockerized install path
+MPATH="/opt/mailcow-dockerized"        ## change here your mailcow-dockerized install path
 MCONF="mailcow.conf"
 MYPATH=$(pwd)
 
