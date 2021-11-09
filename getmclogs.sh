@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 param="$2 $3"
 
 case "$1" in
