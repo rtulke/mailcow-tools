@@ -70,6 +70,18 @@ case "$1" in
         docker logs $param mailcowdockerized_redis-mailcow_1
     ;;
 
+    ofelia)
+	docker logs $param mailcowdockerized_ofelia-mailcow_1
+    ;;
+
+    olefy)
+	docker logs $param mailcowdockerized_olefy-mailcow_1
+    ;;
+
+    solr)
+    	docker logs $param mailcowdockerized_solr-mailcow_1
+    ;;
+
     --all|all)
         mypath=$(pwd)
         cd /opt/mailcow-dockerized
@@ -81,9 +93,7 @@ case "$1" in
       echo
       echo "Usage: $0 [filter|all|--help] <params>"
       echo
-      echo "  e.g. $0 postfix"
       echo "  e.g. $0 postfix -f --since=1m"
-      echo "  e.g. $0 all"
       echo
       echo "  Parameter"
       echo
@@ -96,7 +106,7 @@ case "$1" in
 
   Filters   |  Containers
   ----------+-----------------------------------------
-  all       |  print all containers
+  all       |  print logs of all containers
   postfix   |  mailcowdockerized_postfix-mailcow_1
   dovecot   |  mailcowdockerized_dovecot-mailcow_1
   nginx     |  mailcowdockerized_nginx-mailcow_1
@@ -113,6 +123,9 @@ case "$1" in
   dockerapi |  mailcowdockerized_dockerapi-mailcow_1
   watchdog  |  mailcowdockerized_watchdog-mailcow_1
   redis     |  mailcowdockerized_redis-mailcow_1
+  ofelia    |  mailcowdockerized_ofelia-mailcow_1
+  olefy     |  mailcowdockerized_olefy-mailcow_1
+  solr      |  mailcowdockerized_solr-mailcow_1
       "
     ;;
 
